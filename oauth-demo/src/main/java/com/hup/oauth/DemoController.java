@@ -1,4 +1,4 @@
-package com.hup.oauth.controller;
+package com.hup.oauth;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.Authentication;
@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/test")
 @Slf4j
-public class TestController {
+public class DemoController {
 
-    @GetMapping("/user")
+    @GetMapping("/user1")
     public Authentication getUser(Authentication authentication) {
         log.info("resource: user {}", authentication);
         return authentication;
